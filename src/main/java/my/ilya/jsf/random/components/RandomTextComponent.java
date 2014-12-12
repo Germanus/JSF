@@ -57,11 +57,14 @@ public class RandomTextComponent extends UIComponentBase{
 	//LOGIC
 	public String getRandomText() throws IOException {
 		RandomTextAPI api = new RandomTextAPI();
-		return api.getRandomText(TextType.valueOf(getTextType()),
-				OutputTag.valueOf(getOutputTag()),
-				getCount(),
-				getMinWords(),
-				getMaxWords());
+		if(!getTextType().isEmpty()){
+			return api.getRandomText(TextType.valueOf(getTextType()),
+					OutputTag.valueOf(getOutputTag()),
+					getCount(),
+					getMinWords(),
+					getMaxWords());
+		}
+		return "";		
 	}
 	
 	//Attributes
