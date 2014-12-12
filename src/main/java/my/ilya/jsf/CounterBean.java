@@ -10,8 +10,9 @@ public class CounterBean {
 	private int input ;
 	private int output = 100;
 	
-	public void submit(){
-		output = input;
+	public String submit(){
+		//output = input;
+		return "";
 	}
 	
 	public int getTime(){
