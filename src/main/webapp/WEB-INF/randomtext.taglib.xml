@@ -13,35 +13,35 @@
 		</component>
 		
 		<attribute>
+			<!--  <required>true</required>
+			<description>Type of random text to generate. Either gibberish or lorem</description>-->
 			<name>textType</name>
-			<type>java.lang.String</type>
-			<description>Type of random text to generate. Either gibberish or lorem</description>
-			<required>true</required>
+			<type>java.lang.String</type>			
 		</attribute>
 		
 		<attribute>
 			<name>outputTag</name>
 			<type>java.lang.String</type>
-			<description>Type of HTML to generate. Either p for or ul for list.</description>			
+			<!--   <description>Type of HTML to generate. Either p for or ul for list.</description>-->			
 		</attribute>
 		
 		<attribute>
 			<name>count</name>
 			<type>java.lang.Integer</type>
-			<description>Number of parapraphs or items to return</description>
-			<required>true</required>
+			<!--  <description>Number of parapraphs or items to return</description>
+			<required>true</required>-->
 		</attribute>
 		
 		<attribute>
 			<name>minWords</name>
 			<type>java.lang.Integer</type>
-			<description>Minimum number of words to return in each para or item.</description>			
+			<!--  <description>Minimum number of words to return in each para or item.</description>-->			
 		</attribute>
 		
 		<attribute>
 			<name>maxWords</name>
 			<type>java.lang.Integer</type>
-			<description>Minimum number of words to return in each para or item.</description>			
+			<!-- <description>Minimum number of words to return in each para or item.</description>-->			
 		</attribute>
 				
 	</tag>

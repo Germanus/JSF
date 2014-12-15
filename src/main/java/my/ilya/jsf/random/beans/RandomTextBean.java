@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
-import javax.inject.Named;
+//import javax.inject.Named;
 
 //@Named(value = "random")
 @ManagedBean(name="random")
