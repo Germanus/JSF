@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	version="1.0">
+	<persistence-unit name="personPersistenceUnit"
+		transaction-type="RESOURCE_LOCAL">
+		<class>my.ilya.jsf.core.Person</class>
+		<class>my.ilya.jsf.core.Professor</class>
+		<class>my.ilya.jsf.core.Project</class>
+		<class>my.ilya.jsf.core.Department</class>
+	</persistence-unit>
+</persistence>

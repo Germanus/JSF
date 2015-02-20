@@ -1,17 +1,23 @@
 package my.ilya.jsf.core;
 
-public class Person {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
+@Entity
+public class Person {
+	@Id
     private Long id;
 
     private String firstName;
 
     private String lastName;
 
-    private String ssn;
-
+    @OneToOne(targetEntity=Person.class)
     private Person inLoveWith;
-
+    
+    @OneToOne(targetEntity=Person.class)
     private Person engagedWith;
 
     public Person() {
@@ -44,14 +50,6 @@ public class Person {
 
     public void setLastname(String name) {
         this.lastName = name;
-    }
-
-    public String getSsn() {
-        return ssn;
-    }
-
-    public void setSsn(String ssn) {
-        this.ssn = ssn;
     }
 
     @Override
