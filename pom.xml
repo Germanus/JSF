@@ -16,8 +16,8 @@
 	</properties>
 
 	<dependencies>
-	
-	<dependency>
+
+		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-jpamodelgen</artifactId>
 			<version>4.3.4.Final</version>
@@ -28,7 +28,7 @@
 			<artifactId>maven-processor-plugin</artifactId>
 			<version>2.2.4</version>
 		</dependency>
-	
+
 
 		<dependency>
 			<groupId>org.hsqldb</groupId>
@@ -209,6 +209,12 @@
 			<version>2.1.1</version>
 		</dependency>
 
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -239,7 +245,7 @@
 					<source>1.6</source>
 					<target>1.6</target>
 				</configuration>
-			</plugin>			
+			</plugin>
 			<plugin>
 				<groupId>org.bsc.maven</groupId>
 				<artifactId>maven-processor-plugin</artifactId>
@@ -272,7 +278,7 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
 					<compilerArgument>-proc:none</compilerArgument>
-				</configuration>				
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>

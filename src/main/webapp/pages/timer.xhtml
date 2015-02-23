@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+
+	<title>Timer</title>
+
+</h:head>
+<h:outputStylesheet library="css" name="styles.css" />
+<h:outputScript library="js" name="timer.js" />
+<h:body>
+	<div id="outer">
+		<div id="inner">0</div>
+	</div>
+	<h:commandButton id="start" value="start" onclick="start(#{counterBean.output});">
+		<f:ajax execute="@none" />
+	</h:commandButton>
+	<h:form id="form">
+		<h:inputHidden id="input_test" value="#{counterBean.input}" />
+		<h:commandButton id="submitting" value="stop" action="#{counterBean.submit}" onclick="stop();">
+			<f:ajax execute="@form" render="outtest start" />
+		</h:commandButton>
+	</h:form>
+	<h:outputText id="outtest" value="#{counterBean.output}"></h:outputText>
+	<h:outputLabel value="#{helloWorld.message}"></h:outputLabel>
+	
+</h:body>
+</html>
