@@ -10,6 +10,40 @@
 	background: #053404;	
 }
 
+.left_content{
+	display: block;
+	margin-left: 160px;
+	top: 0;
+	bottom: 0;
+	z-index: 1000;
+	overflow-y: auto;	
+}
+
+.top {
+	display: block;
+	margin-left: 160px;
+	top: 0;
+	bottom: 0;
+	z-index: 1000;
+	overflow-y: auto;	
+	font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	max-width: 768px;
+	margin: 0 auto;
+	padding: 1em;
+	text-align: center;
+	border-bottom: 1px solid #eee;
+	background: #fff;
+	letter-spacing: 0.05em;
+}
+
+.content{
+	
+	font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	border-bottom: 1px solid #eee;
+	background: #fff;
+	
+}
+
 #outer {
 	width: 100%;
 	background:

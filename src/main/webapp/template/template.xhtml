@@ -12,11 +12,19 @@
 
 <h:body>
 	<div id="top" class="top">
-		<ui:insert name="top">Top Section</ui:insert>
+		<ui:insert name="top">JSF</ui:insert>
 	</div>
 	<div>
 		<div id="left">
-			<ui:insert name="left">Left Section</ui:insert>
+			<ui:insert name="left">
+				<ul>
+					<li><a href="/jsf/pages/login.xhtml">Login</a></li>
+					<li><a href="/jsf/pages/random-text.xhtml">Random Text</a></li>
+					<li><a href="/jsf/pages/timer.xhtml">Timer</a></li>
+					<li><a href="/jsf/pages/words.xhtml">Words</a></li>
+				</ul>
+
+			</ui:insert>
 		</div>
 		<div id="content" class="left_content">
 			<ui:insert name="content">Main Content</ui:insert>
