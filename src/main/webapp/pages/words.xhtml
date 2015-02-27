@@ -14,6 +14,7 @@
 		<ui:define name="content">
 			<h:form>
 				<h:outputLabel value="#{wordBean.word}"></h:outputLabel>
+				<h:commandButton value="create" actionListener="#{wordBean.insert}"></h:commandButton>
 			</h:form>
 		</ui:define>
 	</ui:composition>
