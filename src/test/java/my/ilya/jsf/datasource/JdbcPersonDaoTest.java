@@ -22,7 +22,7 @@ import com.mockobjects.sql.MockMultiRowResultSet;
 
 public class JdbcPersonDaoTest {
 
-    @Test
+    @Test 
     public void testFindByLastname() throws Exception {
         DataSource datasource = createMock(DataSource.class);
         Connection connection = createMock(Connection.class);
