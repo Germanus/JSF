@@ -111,3 +111,69 @@ li {
 	-webkit-margin-start: 0px;
 	-webkit-margin-end: 0px;	
 }
+
+table {
+	width: 100%;
+	/*max-width: 600px;*/
+	height 320px;
+	border-collapse: collapse;
+	border: 1px solid #114511;
+	margin: 5px auto;
+	background: white;
+}
+th {
+	background: #228b22;
+	height: 54px;
+	width: 25%;
+	font-weight: lighter;
+	text-shadow: 0 1px 0 #3F8F38;
+	color: white;
+	border: 1px solid #114511;
+	box-shadow: inset 1px 1px 1px #145314;
+	/*transition: all 0.2s;*/
+}
+
+tr:last-child {
+	border-bottom: 0px;
+}
+
+td {
+	border-right: 1px solid #061b06;
+	padding: 10px;
+	/*transition: all 0.2s;*/
+}
+
+td.selected {
+  background: #90c590;
+  z-index: ;
+}
+
+td input {
+  font-size: 14px;
+  background: none;
+  outline: none;
+  border: 0;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+}
+
+td input:focus {
+  box-shadow: 0 1px 0 #228b22;
+  color: #1b6f1b;
+}
+
+::-moz-selection {
+  background: #228b22;
+  color: white;
+}
+
+::selection {
+  background: #228b22;
+  color: white;
+}
+
+.wordTable{
+	 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+}
+
