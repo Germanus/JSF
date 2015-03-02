@@ -2,7 +2,10 @@ package my.ilya.jsf.words;
 
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
+import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.RequestScoped;
@@ -26,9 +29,11 @@ public class WordBean implements Serializable {
 	@ManagedProperty(value = "#{wordRepository}")
 	private WordRepository wordRepository;	
 	private static final long serialVersionUID = 1L;
+	private List<Word> words = new ArrayList<Word>();
 
-	public String getWord(){
-      return getWordRepository().findAll().toString();
+	@PostConstruct
+	public void init(){
+		words = getWordRepository().findAll();
 	}
 	
 	public void insert(ActionEvent event){
@@ -45,6 +50,14 @@ public class WordBean implements Serializable {
 
 	public void setWordRepository(WordRepository wordRepository) {
 		this.wordRepository = wordRepository;
+	}
+
+	public List<Word> getWords() {
+		return words;
+	}
+
+	public void setWords(List<Word> words) {
+		this.words = words;
 	}
 	
 }

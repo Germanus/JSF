@@ -14,6 +14,8 @@ import org.springframework.stereotype.Repository;
 @Transactional
 public class WordRepository extends BaseRepository<Word> {
 	
+	private static final long serialVersionUID = 1L;
+
 	public WordRepository() {
 		super(Word.class);
 	}

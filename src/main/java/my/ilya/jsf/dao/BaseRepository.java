@@ -7,11 +7,14 @@ import javax.persistence.criteria.CriteriaQuery;
 
 import javax.transaction.Transactional;
 
+import java.io.Serializable;
 import java.util.List;
 
 @SuppressWarnings("unchecked")
 @Transactional
-public abstract class BaseRepository<T> {
+public abstract class BaseRepository<T> implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 
 	@PersistenceContext
 	private EntityManager entityManager;
